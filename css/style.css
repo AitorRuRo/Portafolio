@@ -1,0 +1,197 @@
+/*class*/
+.w5{
+    width: 5%;
+}
+.w10{
+    width: 10%;
+}
+.w15{
+    width: 15%;
+}
+.w20{
+    width: 20%;
+}
+.w25{
+    width: 25%;
+}
+.w33{
+    width: 33%;
+}
+.w50{
+    width: 50%;
+}
+.w75{
+    width: 75%;
+}
+.w80{
+    width: 80%;
+}
+.w100{
+    width: 100%;
+}
+
+.m0{
+    margin: 0;
+}
+
+.m0a{
+    margin: 0 auto;
+}
+
+.circle{
+    border-radius: 100%;
+}
+
+.align{
+    align-items: center;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.itemsCenter{
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.justifiContent{
+    justify-content: space-around;
+}
+
+.separacio{
+    justify-content: space-between;
+}
+
+.paddingTop{
+    padding-top: 25px;
+}
+
+.padding5{
+    padding: 5px;
+}
+
+.paddingLeft{
+    padding: 25px;
+}
+.paddingRigth0{
+    padding-right: 0px;
+}
+.background-white{
+    background-color: #ffffff;
+}
+
+.cuadros{
+    background-color: #222222;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ff00cc90;
+    box-shadow: 2px 3px 2px #ff00cc50;
+}
+
+.round{
+    border-radius: 10px;
+}
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    padding: 0;
+    text-align: center;
+}
+header ul li{
+    display: inline; 
+}
+header ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s linear;
+}
+#idioma p{
+    text-decoration: none;
+    margin: 0px;
+    border-bottom: 1px solid #ffffff;
+    transition: all 0.5s linear;
+}
+
+/*Body*/
+body{
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+#me{
+    margin: auto;
+    margin-top: 25px;
+}
+.me{
+    border: 2px solid #ff00cc90;
+    box-shadow: 2px 3px 2px #ff00cc50;
+}
+.button{
+    background-color: #ff9100d1;
+    border-radius: 5px;
+    border: #d57a03d1;
+    padding: 8px;
+    margin-top: 10px;
+    transition: all 0.5s linear;
+}
+.button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.5s linear;
+}
+#CV a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s linear;
+}
+
+/*Footer*/
+.second{
+    display: none;
+}
+.gmail2{
+    display: none;
+}
+
+/*Hover*/
+header ul li a:hover {
+    color: #ff00cc90;
+    border-bottom: 1px solid #ff00cc90;
+}
+#idioma p:hover{
+    color: #ff00cc90;
+    border-bottom: 1px solid #ff00cc90;
+}
+h2#CV a:hover{
+    color: #ff00cc90;
+    border-bottom: 1px solid #ff00cc90;   
+}
+footer a:hover .first{
+    display: none;
+}
+footer a:hover .second{
+    display: block;
+}
+#Gmail:hover .gmail1{
+    display: none;
+}
+#Gmail:hover .gmail2{
+    margin: auto;
+    display: block;
+}
+.button:hover{
+    background-color: #ff910099;;
+}
