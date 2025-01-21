@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.center{
+    margin: 0 auto;
+}
+
 .textCenter{
     text-align: center;
 }
@@ -100,8 +104,15 @@
     border-radius: 10px;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 /*header*/
 header{
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -120,13 +131,14 @@ header ul li a{
 #idioma p{
     text-decoration: none;
     margin: 0px;
-    border-bottom: 1px solid #ffffff;
+    color: #ff00cc90;
+    border-bottom: 1px solid #ff00cc90;
     transition: all 0.5s linear;
 }
 
 /*Body*/
 body{
-    margin: 0;
+    margin: 0px;
     background-color: #000000;
     color: #ffffff;
 }
@@ -157,6 +169,62 @@ body{
     color: #ffffff;
     transition: all 0.5s linear;
 }
+.subtitle{
+    color: #ffffff99;
+    margin-top: 0px;
+}
+h1{
+    margin-bottom: 0px;
+}
+
+    /*CV*/
+    #barra_cv{
+        background-color: #03005377;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 200px;
+    }
+    #img_cv{
+        position: relative;
+        bottom: 50px;
+        right: 25px;
+    }
+    #nom_cv{
+        position: relative;
+        bottom: 50px;
+        font-size: 35px;
+    }
+    #cognom_cv{
+        position: relative;
+        bottom: 75px;
+        left: 25px;
+        font-size: 35px;
+    }
+    #subtitle_cv{
+        position: relative;
+        left: 60px;
+        bottom: 75px;
+        font-size: 25px;
+    }
+    #idiomas p{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #ffffff99;
+        font-size: 15px;
+    }
+    #idiomas h3{
+        margin: 16px;
+        font-size: 15px;
+    }
+    #idiomas{
+        position: relative;
+        bottom: 100px;
+        left: 200px;
+    }
+    #cos_cv{
+        margin-left:35px;
+        margin-right: 35px;
+    }
 
 /*Footer*/
 .second{
