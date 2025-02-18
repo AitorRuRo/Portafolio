@@ -69,6 +69,9 @@
 .justifiContent{
     justify-content: space-around;
 }
+.justifiContentCenter{
+    justify-content: center;
+}
 
 .separacio{
     justify-content: space-between;
@@ -93,13 +96,15 @@
 }
 
 .cuadros{
+    width: 10%;
     background-color: #222222;
     padding: 5px;
     margin: 5px;
     border: 1px solid #ff00cc90;
     box-shadow: 2px 3px 2px #ff00cc50;
+    opacity: 100%;
+    transition: 0.5s;
 }
-
 .round{
     border-radius: 10px;
 }
@@ -179,7 +184,7 @@ h1{
 
     /*CV*/
     #barra_cv{
-        background-color: #03005377;
+        background-color: #03005399;
         margin-top: 50px;
         margin-bottom: 50px;
         height: 200px;
@@ -225,6 +230,10 @@ h1{
         margin-left:35px;
         margin-right: 35px;
     }
+    #cualidades p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
 /*Footer*/
 .second{
@@ -261,5 +270,69 @@ footer a:hover .second{
     display: block;
 }
 .button:hover{
-    background-color: #ff910099;;
+    background-color: #ff910099;
+}
+.cuadros:hover{
+    width: 15%;
+    font-size: 25px;
+}
+.cuadros:not(:hover){
+    opacity: 75%;
+}
+
+@media (max-width: 1200px){
+    .display_none{
+        display: none;
+    }
+    .cuadros{
+        width: 15%;
+    }
+    .cuadros:hover{
+        width: 20%;
+        font-size: 25px;
+    }
+    .wrap_1200{
+        flex-wrap: wrap;
+    }
+    .wrap_1200 .w20{
+        width: 75%;
+    }
+    .justifiContentCenter_1200{
+        justify-content: center;
+        text-align: center;
+    }
+    .justifiContentCenter_1200 .w25, .justifiContentCenter .w25{
+        width: 35%;
+    }
+    .d20 .cuadros{
+        width: 20%;
+    }
+    .d20 .cuadros:hover{
+        width: 25%;
+        font-size: 25px;
+    }
+    #barra_cv .w20{
+        width: 30%;
+    }
+    #barra_cv .w80{
+        width: 70%;
+    }
+}
+@media (max-width: 768px) {
+    .display_none_768{
+        display: none;
+    }
+    .cuadros{
+        width: 40%;
+    }
+    .cuadros:hover{
+        width: 45%;
+        font-size: 25px;
+    }
+    .wrap_768{
+        flex-wrap: wrap;
+    }
+    .wrap_768 .cuadros{
+        width: 50%;
+    }
 }
