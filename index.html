@@ -1,103 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Inicio</title>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/codificacion.png" type="image/x-icon">
 </head>
-
 <body>
-   <header class="justifiContentCenter">
-      <div class="w25">
-         <ul class="flex justifiContent">
-            <li><a class="padding5" href="index.html">Inicio</a></li>
-            <li><a class="padding5" href="html/masDeMi.html">Sobre mí</a></li>
-            <li><a class="padding5" href="html/proyectos.html">Proyectos</a></li>
+   <header>
+      <div id="top">
+         <ul>
+            <li><a href="html/masDeMi.html">Más sobre mí</a></li>
          </ul>
       </div>
    </header>
-   <div id="me" class="w33">
-      <img class="w100 me circle" src="img/WhatsApp Image 2024-10-26 at 11.32.46.jpeg" alt="Imatge sobre mí">
+   <div class="imgPersonal">
+      <img src="img/WhatsApp Image 2024-10-26 at 11.32.46.jpeg" alt="Imagen personal">
    </div>
-   <h1 class="textCenter">Aitor Rubio</h1>
-   <h2 class="textCenter subtitle">Desarrollador web</h2>
-   <h2 class="textCenter">Lenguajes principales</h2>
-   <div class="flex itemsCenter wrap_768">
-      <div class="align cuadros round flex">
-         <div class="w25">
-            <img class="w100 round"
-               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
-               alt="JavaScrip">
-         </div>
-         <h3 class="w75 m0 padding5">JavaScrip</h3>
+   <h1>Programador</h1>
+   <p class="descripcio">Programador que tiene evolución constante y está en busca de retos para crecer más.</p>
+   <h1>Mejor me desenvuelvo:</h1>
+   <div class="cuadros flex wrap">
+      <div>
+         <img src="img/java.png" alt="Java">
+         <p>Java</p>
       </div>
-      <div class="align cuadros round flex display_none">
-         <div class="w25">
-            <img class="w100 round" src="https://icones.pro/wp-content/uploads/2021/05/icone-html-orange.png"
-               alt="HTML">
-         </div>
-         <h3 class="w75 m0 padding5">HTML</h3>
+      <div>
+         <img src="img/js.png" alt="JavaScript">
+         <p>JavaScript</p>
       </div>
-      <div class="align cuadros round flex display_none">
-         <div class="w25">
-            <img class="w100 round" src="https://www.adaweb.es/wp-content/uploads/2022/05/logotipo_css-min.png"
-               alt="CSS">
-         </div>
-         <h3 class="w75 m0 padding5">CSS</h3>
+      <div class="out_750">
+         <img src="img/pyton.png" alt="Python">
+         <p>Python</p>
       </div>
-      <div class="align cuadros round flex">
-         <div class="w25">
-            <img class="w100 round" src="https://nattia.com/wp-content/uploads/2023/10/java_image.png" alt="JAVA">
-         </div>
-         <h3 class="w75 m0 padding5">JAVA</h3>
-      </div>
-      <div class="align cuadros round flex">
-         <div class="w25">
-            <img class="w100 round"
-               src="https://images.ctfassets.net/em6l9zw4tzag/oVfiswjNH7DuCb7qGEBPK/b391db3a1d0d3290b96ce7f6aacb32b0/python.png"
-               alt="Python">
-         </div>
-         <h3 class="w75 m0 padding5">Python</h3>
+      <div>
+         <img src="img/base-de-datos.png" alt="MySQL">
+         <p>MySQL</p>
       </div>
    </div>
-   <div class="flex itemsCenter">
-      <button class="button"><a href="html/masDeMi.html">Mas informacion</a></button>
+   <div class="boton">
+      <button><a href="html/masDeMi.html">Más sobre mí</a></button>
    </div>
-   <h2 class="textCenter">Proyectos</h2>
-   <div>
-      <div></div>
-      <div></div>
-      <div></div>
-   </div>
-   <div class="flex itemsCenter">
-      <button class="button"><a href="html/proyectos.html">Mas proyectos</a></button>
-   </div>
-   <footer class="flex separacio textCenter">
-      <div class="w33"  >
-         <div class="w10 m0a">
-            <a id="Up" class="w100" href="#idioma">
-               <img class="first w100" src="img/arrow_upward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Flexa arriba">
-               <img class="second w100" src="img/arrow_upward_24dp_FF00CC90_FILL0_wght400_GRAD0_opsz24.png" alt="Flexa arriba">
-            </a>
-         </div>
+   <footer>
+      <div class="up">
+          <div class="arrow">
+              <a href="#top" class="Flexa0">
+                  <img src="img/arrow_upward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Flecha hacia arriba">
+               </a>
+               <a href="#top" class="Flexa1">
+                  <img src="img/arrow_upward_24dp_FF00CC90_FILL0_wght400_GRAD0_opsz24.png" alt="Flecha hacia arriba">
+               </a>
+          </div>
       </div>
-      <div class="w33">
-         <p>Versión 2024</p>
+      <div class="version">
+         <p>Versión 2025</p>
       </div>
-      <div class="align flex w33">
-         <p class="padding5">Correo:</p>
-         <div class="padding5">
-            <p>aitorrubiorosales9@gmail.com</p>
-         </div>
-         <div id="Gmail" class="w5">
-            <img class="w100 gmail gmail1"  onclick="Gmail()" src="img/content_copy_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="copiar">
-            <img class="w100 gmail gmail2"  onclick="Gmail()" src="img/content_copy_24dp_FF00CC90_FILL0_wght400_GRAD0_opsz24.png" alt="Copiar">
+      <div class="flex">
+         <p>Correo: </p>
+         <p>aitorrubiorosales9@gmail.com</p>
+         <div class="gmail">
+            <img class="copy" onclick="Gmail()" src="img/content_copy_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Logo de copia">
+            <img class="copy1" onclick="Gmail()" src="img/content_copy_24dp_FF00CC90_FILL0_wght400_GRAD0_opsz24.png" alt="Logo de copia">   
          </div>
       </div>
    </footer>
-   <script src="js/script.js"></script>
+   <script src="../js/script.js"></script>
 </body>
-
 </html>
