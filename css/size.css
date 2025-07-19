@@ -1,0 +1,121 @@
+@media (max-width: 1200px){
+    #barra_cv .imgPersonal{
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+    #idiomas h3{
+        text-align: center;
+    }
+    #barra_cv #idiomas h3{
+        text-align: left;
+    }
+    .imgPersonal img{
+        width: 35%;
+    }
+    #barra_cv .imgPersonal{
+        bottom: 90px;
+    }
+    #barra_cv .imgPersonal img{
+        width: 70%;
+    }
+    .flex_0{
+        display: block;
+    }
+    #barra_cv #idiomas .flex{
+        position: relative;
+        bottom: 15px;
+    }
+    #nom_cv{
+        right: 65px;
+    }
+    #cognom_cv{
+        right: 50px;
+    }
+    #idiomas div.flex_0 div.flex{
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 700px){
+    .cuadros img{
+        display: none;
+    }
+    .cuadros p{
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        display: block;
+    }
+    footer .flex{
+        justify-content: center;
+    }
+    #barra_cv .imgPersonal{
+        right: 5px;
+    }
+    #barra_cv .imgPersonal img{
+        width: 90%;
+    }
+    #subtitle_cv{
+        right: 75px;
+    }
+    #nom_cv{
+        right: 0px;
+    }
+    #cognom_cv{
+        right: 20px;
+    }
+    #barra_cv #idiomas{
+        right: 100px;
+    }
+    #barra_cv #idiomas p{
+        margin: auto auto auto 10px;
+    }
+}
+@media (max-width: 500px){
+    #barra_cv #idiomas p{
+        margin: auto auto auto 5px;
+    }
+    #idiomas p{
+        margin: auto;
+    }
+    #idiomas .flex{
+        margin-left: 25px;
+    }
+    .cuadros div{
+        width: auto;
+    }
+    #barra_cv #idiomas .flex{
+        left: 25px;
+    }
+    #barra_cv .imgPersonal{
+        bottom: 60px;
+    }
+    footer .flex p{
+        margin: auto;
+    }
+}
+@media (max-width: 400px){
+    #barra_cv .imgPersonal img{
+        width: 95%;
+    }
+    #barra_cv .imgPersonal{
+        right: 0px;
+        left: 5px;
+    }
+    #barra_cv .flex_1{
+        margin: auto;
+        justify-content: center;
+    }
+    #barra_cv{
+        height: 225px;
+    }
+    #barra_cv #idiomas{
+        justify-content: center;
+        right: 60px;
+    }
+    #barra_cv #idiomas h3{
+        margin-left: 0px;
+    }
+}

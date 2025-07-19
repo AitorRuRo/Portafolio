@@ -1,7 +1,6 @@
 function Gmail(){
-    const textoACopiar = "aitorrubiorosales9@gmail.com";
     const elementoTemporal = document.createElement("textarea");
-    elementoTemporal.value = textoACopiar;
+    elementoTemporal.value = "aitorrubiorosales9@gmail.com";
     document.body.appendChild(elementoTemporal);
     elementoTemporal.select();
     document.execCommand("copy");

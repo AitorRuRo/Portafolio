@@ -1,0 +1,54 @@
+#barra_cv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgP txt txt"
+    ;
+    margin-top: 100px;
+    background-color: #03005399;
+    height: 200px;
+}
+#barra_cv .imgPersonal{
+    grid-area: imgP;
+    position: relative;
+    right: 25px;
+    bottom: 120px;
+}
+#barra_cv .imgPersonal img{
+    width: 50%;
+}
+.upTxt{
+    grid-area: txt;
+}
+#nom_cv{
+    position: relative;
+    right: 100px;
+    bottom: 50px;
+    font-size: 35px;
+}
+#cognom_cv{
+    position: relative;
+    right: 75px;
+    bottom: 50px;
+    font-size: 25px;
+}
+#subtitle_cv{
+    position: relative;
+    bottom: 50px;
+}
+#barra_cv #idiomas{
+    position: relative;
+    bottom: 65px;
+}
+#barra_cv #idiomas p{
+    color: #888888;
+    margin: auto auto auto 25px;
+}
+#pdf a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+#pdf:hover a{
+    color: #FF00CC90;
+}
