@@ -183,6 +183,10 @@ footer .copy1, .Flexa1{
 .gmail:hover .copy1{
     display: block;
 }
+.gmail{
+    display: flex;
+    align-items: center;
+}
 footer .arrow:hover .Flexa0{
     display: none;
 }
