@@ -1,0 +1,53 @@
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.oscuro {
+    background-color: #000012;
+    padding-top: 16px;
+}
+
+.claro {
+    background-color: #dddddd;
+    padding-top: 16px;
+}
+
+.change {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 16px;
+}
+
+.oscuro .change {
+    background-color: #eeeeee;
+}
+
+.claro .change {
+    background-color: #000033;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.gap10 {
+    gap: 10px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.oneLine {
+    white-space: noWrap;
+}
+
+.w40 {
+    width: 40%;
+}
