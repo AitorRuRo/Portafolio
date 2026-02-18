@@ -15,7 +15,7 @@
 }
 .oscuro .masDeMi a{
     font-size: 25px;
-    margin: auto;
+    margin: 0 auto;
     text-decoration: none;
     color: #dddddd;
     transition: 0.3s;

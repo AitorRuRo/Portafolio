@@ -2,9 +2,15 @@ import Conocimiento from "./Conocimiento"
 import { conocimientosTodos, softSkills } from "./Content/Esctudios"
 import Experiencia from "./Experiencia"
 import "./MasDeMi.css"
-export default function MasDeMi() {
+
+interface Input{
+    goStart:(input:number)=>void
+}
+
+export default function MasDeMi({goStart}:Input) {
     return (
         <section className="masDeMi">
+            <a onClick={()=>{goStart(0)}}>&#8963;</a>
             <p className="textCenter">Soy una persona apasionada por el código, siempre he querido saber cómo funciona todo lo electrónico por dentro y por eso estoy estudiando actualmente un grado superior en el TIC de Barcelona para conseguir conocimientos, con los cuales tener una buena base y poder seguir aprendiendo por mi parte.</p>
             <h1 className="textCenter">Experiencia</h1>
             <div className="displayFlex gap10 spaceEvenly">

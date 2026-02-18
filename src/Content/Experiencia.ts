@@ -3,7 +3,7 @@ import type { Experiencia } from "../Interfaces/Experiencia"
 export const experiencia: Experiencia = {
     "Técnico informático": {
         "Tiempo": "(Enero 2022 - Noviembre 2023)",
-        "Experiencia": "Durante mi período de prácticas, adquirí conocimientos técnicos y desarrollé habilidades de gestión y coordinación.\nAunque éramos solo dos personas, asumí responsabilidades organizativas, siguiendo las necesidades del supervisor y guiando a mi compañero en sus tareas. Esta experiencia me permitió mejorar en la toma de decisiones y el trabajo en equipo.",
+        "Experiencia": "Aunque éramos solo dos personas, asumí responsabilidades organizativas, siguiendo las necesidades del supervisor y guiando a mi compañero en sus tareas. Esta experiencia me permitió mejorar en la toma de decisiones y el trabajo en equipo.",
     },
     "Programador fullstack Diba": {
         "Tiempo": "(Octubre 2025 - Actualmente)",

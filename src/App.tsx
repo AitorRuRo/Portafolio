@@ -7,8 +7,12 @@ export default function App() {
   const [activeSection, setActiveSection] = useState(0);
   const [ativado, setActivado] = useState(false);
   const [tipo, setTipo] = useState(true)
+  
+  const go = (input:number) => {
+    setActiveSection(input)
+  }
 
-  const secciones = [<Portada />, <MasDeMi />];
+  const secciones = [<Portada goMasDeMi={go} />, <MasDeMi goStart={go}/>];
 
   useEffect(() => {
     const handleWheel = (e: any) => {
@@ -26,6 +30,8 @@ export default function App() {
 
     return () => window.removeEventListener('wheel', handleWheel);;
   }, [secciones]);
+
+
 
   const containerStyle = {
     transform: `translateY(-${activeSection * 100}vh)`,

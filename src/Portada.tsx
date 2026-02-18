@@ -3,7 +3,12 @@ import Conocimiento from './Conocimiento'
 
 import "./Portada.css"
 import { conocimientosPrincipales } from './Content/Esctudios'
-export default function Portada() {
+
+interface Input{
+    goMasDeMi: (input:number) => void
+}
+
+export default function Portada({goMasDeMi}:Input) {
     return (
         <section className='portada'>
             <Me />
@@ -15,7 +20,7 @@ export default function Portada() {
                 ))}
             </div>
             <p>Quieres saber mas?</p>
-            <p>&#8964;</p>
+            <a onClick={()=>{goMasDeMi(1)}}>&#8964;</a>
         </section>
     )
 }
