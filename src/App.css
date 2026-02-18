@@ -9,7 +9,6 @@
 }
 
 .claro {
-    background-color: #dddddd;
     padding-top: 16px;
 }
 
@@ -20,14 +19,6 @@
     margin-left: 16px;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.oscuro .change {
-    background-image: url("sol.png");
-}
-
-.claro .change {
-    background-image: url("luna.png");
 }
 
 .displayFlex {

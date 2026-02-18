@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #eeeeee;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .meImg {
@@ -92,7 +92,7 @@ body {
     background-color: #cccccc;
 }
 
-.githubBack {
+.oscuro .githubBack {
     background-color: #444444;
     border-radius: 100px;
 }

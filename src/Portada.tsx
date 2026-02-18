@@ -19,7 +19,8 @@ export default function Portada({ goMasDeMi }: Input) {
                     <Conocimiento key={index} Text={conocimiento} nivel={conocimientos[conocimiento]} />
                 ))}
             </div>
-            <a onClick={() => { goMasDeMi(1) }}>&#8964;</a>
+            {window.innerWidth > 1000 && <a onClick={() => { goMasDeMi(1) }}>&#8964;</a>}
+
         </section>
     )
 }
