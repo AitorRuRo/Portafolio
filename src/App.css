@@ -18,14 +18,16 @@
     height: 32px;
     border-radius: 16px;
     margin-left: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .oscuro .change {
-    background-color: #eeeeee;
+    background-image: url("sol.png");
 }
 
 .claro .change {
-    background-color: #000033;
+    background-image: url("luna.png");
 }
 
 .displayFlex {

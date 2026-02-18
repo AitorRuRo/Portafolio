@@ -7,6 +7,7 @@ body {
 .meImg {
     width: 25%;
     overflow: hidden;
+    position: relative;
 }
 
 .oscuro .meImg img {
@@ -17,6 +18,16 @@ body {
     width: 98%;
     box-shadow: 5px 5px 15px -5px #A037A6;
     border-radius: 100%;
+}
+
+.cursor{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: 100;
+    width: 32px !important;
+    height: 32px !important;
+    box-shadow: none !important;
 }
 
 .conocimientos {
@@ -96,4 +107,12 @@ body {
 
 .displayNone {
     display: none !important;
+}
+
+div.giro.conocimiento {
+    grid-column: span 2;
+}
+
+.descripcioConocimiento{
+    font-size: 15px !important;
 }

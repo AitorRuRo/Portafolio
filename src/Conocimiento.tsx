@@ -16,7 +16,7 @@ export default function Conocimiento({ Text, nivel }: { Text: string, nivel: str
         <div className={classe + " conocimiento"} onClick={()=>{setClicado(!clicado)}}>
             <img src={Text + ".png"} alt={Text} className={`${desapareceConGiro} ${Text == "Github" ? " githubBack" : ""} ${["Javascript", "Typescript"].includes(Text) ? " redondeadoConocimiento" : ""}`} />
             <p className={desapareceConGiro}>{Text}</p>
-            <p className={aparaceConGiro + " giro"}>{nivel}</p>
+            <p className={aparaceConGiro + " giro descripcioConocimiento"}>{nivel}</p>
         </div>
     )
 }
