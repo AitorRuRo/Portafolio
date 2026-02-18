@@ -1,52 +1,37 @@
 import Concurso from "./Concurso"
-import { softSkills } from "./Content/Esctudios"
 import Experiencia from "./Experiencia"
-import MasDeMiMovil from "./MasDeMiMovil"
 import "./MasDeMi.css"
+import CarrucelExperiencias from "./CarrucelExperiencia"
+import CarrucelConcursos from "./CarrucelConcursos"
 
-interface Input {
-    goStart: (input: number) => void
-}
-
-export default function MasDeMi({ goStart }: Input) {
-    if (window.innerWidth > 768) {
-        return (
-            <section className="masDeMi">
-                <a className="move" onClick={() => { goStart(0) }}>&#8963;</a>
-                <h1 className="textCenter">Experiencia</h1>
+export default function MasDeMi() {
+    return (
+        <section className="masDeMi">
+            <h1 className="textCenter">Experiencia</h1>
+            {window.innerWidth > 768 ?
                 <div className="displayFlex gap10 spaceEvenly">
                     <Experiencia quina="Técnico informático" tamanyo="w40 " />
                     <Experiencia quina="Fullstack Diba" tamanyo="w40 " />
-                </div>
-                <h1 className="textCenter">Concursos</h1>
+                </div> :
+                <CarrucelExperiencias />
+            }
+
+            <h1 className="textCenter">Concursos</h1>
+            {window.innerWidth > 768 ?
                 <div className="displayFlex gap10 spaceEvenly">
                     <Concurso quina="Catalunya de Programame" tamanyo="w40" />
                     <Concurso quina="Final del concurso de Programame" tamanyo="w40" />
-                </div>
-                <h2 className="textCenter">Soft Skills</h2>
-                <p className="textCenter">{softSkills.join("  -  ")}</p>
-                <div className="displayFlex gap10 infoContacto">
-                    <p className="mail textCenter" onClick={() => {
-                        const elementoTemporal = document.createElement("textarea");
-                        elementoTemporal.value = "aitorrubiorosales9@gmail.com";
-                        document.body.appendChild(elementoTemporal);
-                        elementoTemporal.select();
-                        document.execCommand("copy");
-                    }}>aitorrubiorosales9@gmail.com</p>
-                    <p>  -  </p>
-                    <p className="mail textCenter" onClick={() => {
-                        const elementoTemporal = document.createElement("textarea");
-                        elementoTemporal.value = "683118484";
-                        document.body.appendChild(elementoTemporal);
-                        elementoTemporal.select();
-                        document.execCommand("copy");
-                    }}>683118484</p>
+                </div> :
+                <CarrucelConcursos />
+            }
 
-                </div>
-            </section >
-        )
-    } else {
-        return <MasDeMiMovil goStart={goStart} />
-    }
+            <h1 className="textCenter">Proyectos</h1>
+            <p className="textCenter">
+                Actualmente no muestro mis proyectos iniciales porque, aunque cuento con varios desarrollos propios (como un Tres en raya, Adivina la palabra, Hundir la flota o una app de restaurante), prefiero publicar solo contenido que cumpla con un estándar de calidad profesional.
+                <br />
+                Próximamente subiré mi primer proyecto destacado: una biblioteca de código personal diseñada para organizar y localizar fragmentos de código de manera eficiente, evitando perder tiempo buscando en proyectos pasados.
+            </p>
+        </section >
+    )
 
 }

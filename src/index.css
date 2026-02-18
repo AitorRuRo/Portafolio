@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 body {
     margin: 0;
     background-color: #eeeeee;
-    overflow-x: hidden;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
 }
 
 .meImg {
     width: 25%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -20,7 +33,7 @@ body {
     border-radius: 100%;
 }
 
-.cursor{
+.cursor {
     position: absolute;
     top: 30%;
     right: 10%;
@@ -31,12 +44,11 @@ body {
 }
 
 .conocimientos {
-    display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 40%;
     margin: 20px auto 0 auto;
+    flex-wrap: wrap;
 }
 
 .oscuro .conocimiento {
@@ -57,6 +69,7 @@ body {
     font-size: 25px;
     transition: 0.3s;
     cursor: pointer;
+    width: 20%;
 }
 
 .conocimiento img {
@@ -74,17 +87,6 @@ body {
 
 .claro .conocimiento:hover {
     background-color: #cccccc;
-}
-
-.softSkills {
-    font-size: 18px;
-    width: 15% !important;
-}
-
-
-.softSkills:hover {
-    font-size: 20px;
-    width: 20% !important;
 }
 
 .conocimiento:hover {
@@ -110,9 +112,5 @@ body {
 }
 
 div.giro.conocimiento {
-    grid-column: span 2;
-}
-
-.descripcioConocimiento{
-    font-size: 15px !important;
+    width: 100%;
 }

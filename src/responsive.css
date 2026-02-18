@@ -20,26 +20,19 @@
     }
 
     .conocimiento {
-        font-size: 20px;
+        font-size: 18px;
+        width: 25%;
     }
 
-
     .conocimiento:hover {
-        font-size: 22px;
+        width: 27%;
+        font-size: 20px;
         cursor: pointer;
     }
 
     .masDeMi div.spaceEvenly {
         gap: 10px;
         flex-wrap: wrap;
-    }
-
-    .masDeMi h1 {
-        margin-top: 0px;
-    }
-
-    .masDeMi h2 {
-        margin-bottom: 0px;
     }
 
     .w40 {
@@ -59,11 +52,10 @@
 }
 
 @media (max-width: 480px) {
-    .conocimientos {
-        grid-template-columns: repeat(2, 1fr);
-        width: 80%;
+    .w40 h2{
+        font-size: 24px !important;
+        font-weight: 700;
     }
-
     .meImg {
         width: 60%;
     }
@@ -71,5 +63,13 @@
     .portada {
         justify-content: start !important;
         padding-top: 50px;
+    }
+
+    .conocimiento {
+        width: 40%;
+    }
+
+    .conocimiento:hover {
+        width: 44%;
     }
 }

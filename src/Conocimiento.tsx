@@ -5,13 +5,6 @@ export default function Conocimiento({ Text, nivel }: { Text: string, nivel: str
     const classe = clicado ? "giro" : ""
     const aparaceConGiro = clicado ? "" : "displayNone"
     const desapareceConGiro = clicado ? "displayNone" : ""
-    if (nivel == "softSkills") {
-        return (
-            <div className="conocimiento softSkills">
-                <p className="oneLine">{Text}</p>
-            </div>
-        )
-    }
     return (
         <div className={classe + " conocimiento"} onClick={()=>{setClicado(!clicado)}}>
             <img src={Text + ".png"} alt={Text} className={`${desapareceConGiro} ${Text == "Github" ? " githubBack" : ""} ${["Javascript", "Typescript"].includes(Text) ? " redondeadoConocimiento" : ""}`} />

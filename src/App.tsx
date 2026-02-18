@@ -1,53 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Portada from './Portada';
 import MasDeMi from './MasDeMi';
 import "./App.css"
+import { copy } from "./Utils/Copy"
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState(0);
-  const [ativado, setActivado] = useState(false);
   const [tipo, setTipo] = useState(true)
 
-  const go = (input: number) => {
-    setActiveSection(input)
-  }
-
-  const secciones = [<Portada goMasDeMi={go} />, <MasDeMi goStart={go} />];
-
-  useEffect(() => {
-    if (window.innerWidth > 1000) {
-      const handleWheel = (e: any) => {
-        if (e.cancelable) e.preventDefault();
-        if (ativado) return;
-        setActivado(true)
-
-        if (e.deltaY > 0) setActiveSection((prev) => { return prev + 1 >= secciones.length ? prev : prev + 1; });
-        else setActiveSection((prev) => { return prev - 1 < 0 ? 0 : prev - 1; });
-
-        setTimeout(() => setActivado(false), 1000);
-      };
-
-      window.addEventListener('wheel', handleWheel, { passive: false });
-
-      return () => window.removeEventListener('wheel', handleWheel);
-    }
-  }, [secciones]);
-
-
-
-  const containerStyle = {
-    transform: `translateY(-${activeSection * 100}vh)`,
-    transition: 'transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)'
-  };
 
   return (
-    <section className={tipo ? "oscuro" : "claro" + ' container'} style={containerStyle}>
+    <section className={tipo ? "oscuro" : "claro" + ' container'}>
       <div className="change" onClick={() => { setTipo(!tipo) }}>
         <img src={tipo ? "sol.png" : "luna.png"} alt="imagen del tema del fondo" />
       </div>
-      {secciones.map((seccion) => (
-        seccion
-      ))}
+      <Portada />
+      <MasDeMi />
+      <div className="displayFlex gap10 infoContacto">
+        <p className="mail textCenter" onClick={() => copy("aitorrubiorosales9@gmail.com")}>aitorrubiorosales9@gmail.com</p>
+        <p className="mail textCenter" onClick={() => copy("683118484")}>683118484</p>
+      </div>
     </section>
   );
 }

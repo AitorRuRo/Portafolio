@@ -8,8 +8,8 @@ interface Input {
 export default function Experiencia({ quina, tamanyo }: Input) {
     return (
         <section className={tamanyo}>
-            <h1 className="textCenter">{quina}</h1>
-            <h2 className="textCenter">{experiencia[quina]["Tiempo"]}</h2>
+            <h2 className="textCenter">{quina}</h2>
+            <h4 className="textCenter">{experiencia[quina]["Tiempo"]}</h4>
             <p className="textCenter">{experiencia[quina]["Experiencia"]}</p>
         </section>
     )

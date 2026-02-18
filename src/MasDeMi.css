@@ -1,14 +1,5 @@
-.oscuro .masDeMi {
-    color: #ffffff;
-}
-
-.claro .masDeMi {
-    color: #000000;
-}
-
 .masDeMi {
     width: 90%;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -32,25 +23,4 @@
 
 .infoContacto {
     justify-content: center;
-}
-
-.oscuro .titleChange {
-    color: #555;
-}
-
-.oscuro .titleChange img {
-    background-color: #ffffff;
-    border-radius: 100%;
-}
-
-.claro .titleChange {
-    color: #000033;
-}
-
-.oscuro .titleChange:hover {
-    color: #eeeeff;
-}
-
-.claro .titleChange:hover {
-    color: #222255;
 }
