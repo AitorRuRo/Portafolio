@@ -13,27 +13,3 @@
     display: flex;
     flex-direction: column;
 }
-.oscuro .masDeMi a{
-    font-size: 25px;
-    margin: 0 auto;
-    text-decoration: none;
-    color: #dddddd;
-    transition: 0.3s;
-}
-.oscuro .masDeMi a:hover{
-    font-size: 27px;
-    font-weight: bold;
-    color: #ddddff;
-}
-.claro .masDeMi a{
-    font-size: 25px;
-    margin: auto;
-    text-decoration: none;
-    color: #000000;
-    transition: 0.3s;
-}
-.claro .masDeMi a:hover{
-    font-size: 27px;
-    font-weight: bold;
-    color: #111122;
-}
