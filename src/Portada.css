@@ -1,12 +1,12 @@
-.oscuro .portada{
+.oscuro .portada {
     color: #ffffff;
 }
 
-.claro .portada{
+.claro .portada {
     color: #000000;
 }
 
-.portada{
+.portada {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,15 +15,20 @@
     height: 100vh;
 }
 
+.portada h1 {
+    margin-bottom: 0;
+}
+
 .portada p {
     text-align: center;
 }
 
-.oscuro .portada a{
+.oscuro .portada a {
     text-decoration: none;
     color: #ffffff;
 }
-.claro .portada a{
+
+.claro .portada a {
     text-decoration: none;
     color: #ffffff;
 }

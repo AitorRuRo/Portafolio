@@ -1,7 +1,7 @@
-export default function Me(){
-    return(
+export default function Me() {
+    return (
         <div className="meImg">
-            <img src="me.jpg" alt="Una imagen propia" />
+            <a href="CV_AitorRubioRosales.pdf"><img src="me.jpg" alt="Una imagen propia" /></a>
         </div>
     )
 }

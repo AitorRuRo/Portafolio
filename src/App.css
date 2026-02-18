@@ -50,6 +50,8 @@
 
 .w40 {
     width: 40%;
+    box-shadow: 5px 5px 15px -10px #A037A6;
+    border-radius: 10px;
 }
 
 .oscuro a {

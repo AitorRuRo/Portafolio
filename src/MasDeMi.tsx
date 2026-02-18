@@ -1,31 +1,34 @@
-import Conocimiento from "./Conocimiento"
-import { conocimientosTodos, softSkills } from "./Content/Esctudios"
+import Concurso from "./Concurso"
+import { softSkills } from "./Content/Esctudios"
 import Experiencia from "./Experiencia"
+import MasDeMiMovil from "./MasDeMiMovil"
 import "./MasDeMi.css"
 
-interface Input{
-    goStart:(input:number)=>void
+interface Input {
+    goStart: (input: number) => void
 }
 
-export default function MasDeMi({goStart}:Input) {
-    return (
-        <section className="masDeMi">
-            <a onClick={()=>{goStart(0)}}>&#8963;</a>
-            <p className="textCenter">Soy una persona apasionada por el código, siempre he querido saber cómo funciona todo lo electrónico por dentro y por eso estoy estudiando actualmente un grado superior en el TIC de Barcelona para conseguir conocimientos, con los cuales tener una buena base y poder seguir aprendiendo por mi parte.</p>
-            <h1 className="textCenter">Experiencia</h1>
-            <div className="displayFlex gap10 spaceEvenly">
-                <Experiencia quina="Técnico informático" tamanyo="w40 " />
-                <Experiencia quina="Programador fullstack Diba" tamanyo="w40 " />
-            </div>
-            <h1 className="textCenter">Conocimientos</h1>
-            <div className="displayFlex spaceEvenly">
-                {Object.keys(conocimientosTodos).map((conocimiento, index) => (
-                    <Conocimiento key={index} Text={conocimiento} nivel={conocimientosTodos[conocimiento]} />
-                ))}
-            </div>
-            <h2 className="textCenter">Soft Skills</h2>
-            <p className="textCenter">{softSkills.join("  -  ")}</p>
-            <a href="CV_AitorRubioRosales.pdf">CV</a>
-        </section >
-    )
+export default function MasDeMi({ goStart }: Input) {
+    if (window.innerWidth > 768) {
+        return (
+            <section className="masDeMi">
+                <a className="move" onClick={() => { goStart(0) }}>&#8963;</a>
+                <h1 className="textCenter">Experiencia</h1>
+                <div className="displayFlex gap10 spaceEvenly">
+                    <Experiencia quina="Técnico informático" tamanyo="w40 " />
+                    <Experiencia quina="Fullstack Diba" tamanyo="w40 " />
+                </div>
+                <h1 className="textCenter">Concursos</h1>
+                <div className="displayFlex gap10 spaceEvenly">
+                    <Concurso quina="Catalunya de Programame" tamanyo="w40" />
+                    <Concurso quina="Final del concurso de Programame" tamanyo="w40" />
+                </div>
+                <h2 className="textCenter">Soft Skills</h2>
+                <p className="textCenter">{softSkills.join("  -  ")}</p>
+            </section >
+        )
+    } else {
+        return <MasDeMiMovil goStart={goStart} />
+    }
+
 }

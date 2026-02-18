@@ -20,11 +20,12 @@ body {
 }
 
 .conocimientos {
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    margin-top: 20px;
+    width: 40%;
+    margin: 20px auto 0 auto;
 }
 
 .oscuro .conocimiento {
@@ -36,7 +37,6 @@ body {
 }
 
 .conocimiento {
-    width: 10%;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -45,6 +45,7 @@ body {
     text-align: center;
     font-size: 25px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .conocimiento img {
@@ -76,10 +77,8 @@ body {
 }
 
 .conocimiento:hover {
-    width: 12%;
     font-size: 27px;
     background-color: #cccccc;
-    border: 1px solid #A037A655;
 }
 
 .githubBack {

@@ -13,14 +13,7 @@ export const estudios = {
     }
 }
 
-export const conocimientosPrincipales: Conocimientos = {
-    "Typescript": "Alto",
-    "React": "Alto",
-    "Node": "Alto",
-    "MySQL": "Alto"
-}
-
-export const conocimientosTodos: Conocimientos = {
+export const conocimientos: Conocimientos = {
     "Java": "Alto",
     "React": "Alto",
     "Node": "Alto",
