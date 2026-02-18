@@ -4,4 +4,5 @@ export const copy = (input: string) => {
     document.body.appendChild(elementoTemporal);
     elementoTemporal.select();
     document.execCommand("copy");
+    elementoTemporal.remove()
 }
