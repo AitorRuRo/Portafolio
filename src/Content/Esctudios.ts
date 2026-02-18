@@ -14,14 +14,14 @@ export const estudios = {
 }
 
 export const conocimientos: Conocimientos = {
-    "Java": "Alto",
+    "Java": "Medio",
     "React": "Alto",
     "Node": "Alto",
     "MySQL": "Alto",
     "Github": "Alto",
-    "Python": "Alto",
+    "Python": "Medio",
     "Typescript": "Alto",
-    "Javascript": "Alto"
+    "Javascript": "Alto",
 }
 
 export const idiomas: Conocimientos = {
