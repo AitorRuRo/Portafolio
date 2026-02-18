@@ -17,10 +17,9 @@ export default function MasDeMiMovil({ goStart }: Input) {
             {numTramo == 0 &&
                 <>
                     <a className="move" onClick={() => { goStart(0) }}>&#8963;</a>
-                    <p className="textCenter">Soy una persona apasionada por el código, siempre he querido saber cómo funciona todo lo electrónico por dentro y por eso estoy estudiando actualmente un grado superior en el TIC de Barcelona para conseguir conocimientos, con los cuales tener una buena base y poder seguir aprendiendo por mi parte.</p>
                     <h1 className="textCenter">Experiencia</h1>
                     <CarrucelExperiencias />
-                    <a onClick={() => { setNumTramo(1) }}>&#8964;</a>
+                    <a className="move" onClick={() => { setNumTramo(1) }}>&#8964;</a>
                 </>
 
             }
@@ -29,14 +28,22 @@ export default function MasDeMiMovil({ goStart }: Input) {
                     <a className="move" onClick={() => { setNumTramo(0) }}>&#8963;</a>
                     <h1 className="textCenter">Concursos</h1>
                     <CarrucelConcursos />
-                    <a onClick={() => { setNumTramo(2) }}>&#8964;</a>
-                </>
-            }
-            {numTramo == 2 &&
-                <>
-                    <a className="move" onClick={() => { setNumTramo(1) }}>&#8963;</a>
                     <h2 className="textCenter">Soft Skills</h2>
                     <p className="textCenter">{softSkills.join("  -  ")}</p>
+                    <p className="mail textCenter" onClick={() => {
+                        const elementoTemporal = document.createElement("textarea");
+                        elementoTemporal.value = "aitorrubiorosales9@gmail.com";
+                        document.body.appendChild(elementoTemporal);
+                        elementoTemporal.select();
+                        document.execCommand("copy");
+                    }}>aitorrubiorosales9@gmail.com</p>
+                    <p className="mail textCenter" onClick={() => {
+                        const elementoTemporal = document.createElement("textarea");
+                        elementoTemporal.value = "683118484";
+                        document.body.appendChild(elementoTemporal);
+                        elementoTemporal.select();
+                        document.execCommand("copy");
+                    }}>683118484</p>
                 </>
             }
         </section>

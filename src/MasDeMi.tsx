@@ -25,6 +25,24 @@ export default function MasDeMi({ goStart }: Input) {
                 </div>
                 <h2 className="textCenter">Soft Skills</h2>
                 <p className="textCenter">{softSkills.join("  -  ")}</p>
+                <div className="displayFlex gap10 infoContacto">
+                    <p className="mail textCenter" onClick={() => {
+                        const elementoTemporal = document.createElement("textarea");
+                        elementoTemporal.value = "aitorrubiorosales9@gmail.com";
+                        document.body.appendChild(elementoTemporal);
+                        elementoTemporal.select();
+                        document.execCommand("copy");
+                    }}>aitorrubiorosales9@gmail.com</p>
+                    <p>  -  </p>
+                    <p className="mail textCenter" onClick={() => {
+                        const elementoTemporal = document.createElement("textarea");
+                        elementoTemporal.value = "683118484";
+                        document.body.appendChild(elementoTemporal);
+                        elementoTemporal.select();
+                        document.execCommand("copy");
+                    }}>683118484</p>
+
+                </div>
             </section >
         )
     } else {

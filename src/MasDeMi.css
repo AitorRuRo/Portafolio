@@ -25,3 +25,11 @@
 .carrucel .w40{
     width: 70% !important;
 }
+
+.mail:hover{
+    cursor: pointer;
+}
+
+.infoContacto{
+    justify-content: center;
+}
