@@ -7,17 +7,17 @@ export const experiencia: Experiencia = {
     },
     "Fullstack Diba": {
         "Tiempo": "(Octubre 2025 - Actualmente)",
-        "Experiencia": "Actualmente, estoy trabajando en un proyecto que se describiría como una aplicación web, en la que los administradores pueden añadir tareas a otros. En el front-end trabajo con react.js, el back-end en este caso lo hago con node/express y la base de datos la creamos con MySQL"
+        "Experiencia": "Actualmente, estoy trabajando en un proyecto de aplicación web donde los administradores pueden asignar tareas a otros usuarios. En el front-end utilizo React.js, el back-end está desarrollado con Node/Express y la base de datos con MySQL."
     }
 }
 
 export const concursos: Experiencia = {
-    "Catalunya de Programame": {
-        "Experiencia": "En 2025 hice este concurso que participamos en la primera fase en Reus y quedamos segundos con el equipo completo",
+    "Catalunya de ProgramaMe": {
+        "Experiencia": "En 2025 participé en este concurso. Competimos en la primera fase en Reus y logramos la segunda posición con el equipo completo.",
         "Lenguaje": "Java"
     },
-    "Final del concurso de Programame": {
-        "Experiencia": "El 6 de Junio de 2025 participamos en la final en Madrid y quedamos en cuarta posición faltando un integrante del equipo",
+    "Final del concurso de ProgramaMe": {
+        "Experiencia": "El 6 de junio de 2025 participamos en la final en Madrid, donde quedamos en cuarta posición a pesar de contar con un integrante menos en el equipo.",
         "Lenguaje": "Java"
     }
 }
