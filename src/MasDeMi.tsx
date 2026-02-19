@@ -19,8 +19,8 @@ export default function MasDeMi() {
             <h1 className="textCenter">Concursos</h1>
             {window.innerWidth > 768 ?
                 <div className="displayFlex gap10 spaceEvenly">
-                    <Concurso quina="Catalunya de Programame" tamanyo="w40" />
-                    <Concurso quina="Final del concurso de Programame" tamanyo="w40" />
+                    <Concurso quina="Catalunya de ProgramaMe" tamanyo="w40" />
+                    <Concurso quina="Final del concurso de ProgramaMe" tamanyo="w40" />
                 </div> :
                 <CarrucelConcursos />
             }
