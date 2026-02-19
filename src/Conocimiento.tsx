@@ -6,9 +6,9 @@ export default function Conocimiento({ Text, nivel }: { Text: string, nivel: str
     const aparaceConGiro = clicado ? "" : "displayNone"
     const desapareceConGiro = clicado ? "displayNone" : ""
     return (
-        <div className={classe + " conocimiento"} onClick={()=>{setClicado(!clicado)}}>
+        <div className={classe + " conocimiento"} onClick={() => { setClicado(!clicado) }}>
             <img src={Text + ".png"} alt={Text} className={`${desapareceConGiro} ${Text == "Github" ? " githubBack" : ""} ${["Javascript", "Typescript"].includes(Text) ? " redondeadoConocimiento" : ""}`} />
-            <p className={desapareceConGiro}>{Text}</p>
+            <p className={classe}>{Text}</p>
             <p className={aparaceConGiro + " giro descripcioConocimiento"}>{nivel}</p>
         </div>
     )

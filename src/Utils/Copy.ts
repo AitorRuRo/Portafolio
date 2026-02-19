@@ -1,8 +1,3 @@
-export const copy = (input: string) => {
-    const elementoTemporal = document.createElement("textarea");
-    elementoTemporal.value = input;
-    document.body.appendChild(elementoTemporal);
-    elementoTemporal.select();
-    document.execCommand("copy");
-    elementoTemporal.remove()
+export const copy = async (input: string) => {
+    await navigator.clipboard.writeText(input)
 }
