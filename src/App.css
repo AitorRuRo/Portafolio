@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+a{
+    cursor: pointer;
+}
+
 .oscuro {
     background-color: #000011;
     color: #dddddd;
@@ -48,6 +52,10 @@
     border-radius: 10px;
 }
 
+.w80{
+    width: 80%;
+}
+
 .oscuro a {
     font-size: 25px;
     margin: 0 auto;
@@ -72,4 +80,9 @@
     font-size: 27px;
     font-weight: bold;
     color: #111122;
+}
+
+.proyecto img{
+    border: 1px solid #ddddff11;
+    border-radius: 15px;
 }

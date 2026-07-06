@@ -1,3 +1,3 @@
 export interface Experiencia{
-    [key:string]:{[key:string]:string};
+    [key:string]:{[key:string]:string|string[]};
 }
