@@ -33,7 +33,7 @@ export default function Proyecto({ quina, tamanyo }: Input) {
                 </div>
             }
             <p className="textCenter">{proyectos[quina]["Experiencia"]}</p>
-            <h3>Herramientas/Lenguajes/Bibliotecas</h3>
+            <h3>Herramientas / Lenguajes / Bibliotecas</h3>
             {typeof proyectos[quina]["Lenguajes"] != "string" &&
                 <div className="displayFlex textCenter spaceEvenly">
                     {proyectos[quina]["Lenguajes"].map(proyecto => (
