@@ -3,7 +3,7 @@ import { proyectos } from "./Content/Experiencia";
 import Proyecto from "./Proyecto";
 
 export default function CarrucelProyectos() {
-    const [posicio, setPosicio] = useState(1)
+    const [posicio, setPosicio] = useState(0)
 
     return (
         <section className="displayFlex carrucel">
