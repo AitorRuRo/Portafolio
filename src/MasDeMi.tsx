@@ -4,6 +4,7 @@ import "./MasDeMi.css"
 import CarrucelExperiencias from "./CarrucelExperiencia"
 import CarrucelConcursos from "./CarrucelConcursos"
 import Proyecto from "./Proyecto"
+import CarrucelProyectos from "./CarrucelProyectos"
 
 export default function MasDeMi() {
     return (
@@ -31,7 +32,7 @@ export default function MasDeMi() {
                     <div className="displayFlex gap10 spaceEvenly">
                         <Proyecto quina="Hundir la flota" tamanyo="w40" />
                     </div> :
-                    <CarrucelConcursos />
+                    <CarrucelProyectos />
                 }
             </p>
             <a href="https://github.com/AitorRuRo">GitHub</a>
