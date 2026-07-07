@@ -22,7 +22,8 @@ export const conocimientos: Conocimientos = {
     "Python": "Con este lenguaje sé backend porque es lo que nos enseñan en el instituto, como IA de diferentes tipos.",
     "TypeScript": "Actualmente es el lenguaje que más uso porque hago proyectos con él.",
     "JavaScript": "Este lenguaje solo lo uso en los estudios y tengo bastante dominio.",
-    "GDScript": "Este lenguaje llevo unos meses aprendiéndolo porque me interesa mucho el mundo de la programación de videojuegos y uso Godot porque es de código abierto."
+    "GDScript": "Este lenguaje llevo unos meses aprendiéndolo porque me interesa mucho el mundo de la programación de videojuegos y uso Godot porque es de código abierto.",
+    "Docker":"Docker lo he usado a diario para usar diversas bases de datos, tanto en prácticas como en mi día a día."
 }
 
 export const idiomas: Conocimientos = {
