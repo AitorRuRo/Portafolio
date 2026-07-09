@@ -34,7 +34,7 @@ export default function Experiencia({ quina, tamanyo }: Input) {
             <h4 className="textCenter">{experiencia[quina]["Tiempo"]}</h4>
             <p className="textCenter">{experiencia[quina]["Experiencia"]}</p>
             {"Carta" in experiencia[quina] && 
-                <a className="textCenter" href={`${experiencia[quina]}`}>Carta de recomendación</a>
+                <a className="textCenter" href={`${experiencia[quina]["Carta"]}`}>Carta de recomendación</a>
             }
         </section>
     )
