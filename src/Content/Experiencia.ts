@@ -8,6 +8,7 @@ export const experiencia: Experiencia = {
     "Fullstack Diba": {
         "Tiempo": "(Octubre 2025 - 30 Junio 2026)",
         "Experiencia": "Trabajé en un proyecto de aplicación web donde los administradores pueden asignar tareas a otros usuarios. En el front-end utilizo React.js, el back-end está desarrollado con Node/Express y la base de datos con MySQL. Aquí reforcé mis conocimientos de React y Node, creando: Buscador, usuarios y perfiles, login, tokens, horarios, calendarios, eventos y mucho más.",
+        "Carta": "HojaRecomendacionDIBA.pdf"
     }
 }
 
