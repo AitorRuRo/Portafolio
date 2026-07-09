@@ -34,6 +34,10 @@ a{
     flex-direction: column;
 }
 
+.pb10px{
+    padding-bottom: 10px;
+}
+
 .spaceEvenly {
     justify-content: space-evenly;
 }

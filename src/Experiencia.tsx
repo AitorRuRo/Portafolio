@@ -10,7 +10,7 @@ export default function Experiencia({ quina, tamanyo }: Input) {
     const [numImg, setNumImg] = useState(0)
 
     return (
-        <section className={`${tamanyo} displayFlex column`}>
+        <section className={`${tamanyo} displayFlex column pb10px`}>
             <h2 className="textCenter">{quina}</h2>
             {"Imagenes" in experiencia[quina] &&
                 <>
