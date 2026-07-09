@@ -30,6 +30,10 @@ a{
     display: flex;
 }
 
+.column{
+    flex-direction: column;
+}
+
 .spaceEvenly {
     justify-content: space-evenly;
 }
