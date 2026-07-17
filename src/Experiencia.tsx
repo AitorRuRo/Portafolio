@@ -9,6 +9,8 @@ interface Input {
 export default function Experiencia({ quina, tamanyo }: Input) {
     const [numImg, setNumImg] = useState(0)
 
+    if (!experiencia[quina]) return
+
     return (
         <section className={`${tamanyo} displayFlex column pb10px`}>
             <h2 className="textCenter">{quina}</h2>

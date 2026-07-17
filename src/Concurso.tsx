@@ -9,6 +9,7 @@ interface Input {
 export default function Concurso({ quina, tamanyo }: Input) {
     const [numImg, setNumImg] = useState(0)
 
+    if(!concursos[quina]) return
     return (
         <section className={tamanyo}>
             <h2 className="textCenter">{quina}</h2>

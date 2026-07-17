@@ -7,7 +7,7 @@ export const experiencia: Experiencia = {
     },
     "DevOps": {
         "Tiempo": "(Octubre 2025 - 30 Junio 2026)",
-        "Experiencia": `Trabajé en un proyecto de aplicación web donde los administradores pueden asignar tareas a otros usuarios. En el front-end utilizo React.js, el back-end está desarrollado con Node/Express y la base de datos con MySQL. Aquí reforcé mis conocimientos de React y Node, creando: Buscador, usuarios y perfiles, login, tokens, horarios, calendarios, eventos y mucho más. \n\nAñadiendo que tuve que crear un servidor Linux y configurarlo todo desde la seguridad, como el apache, en este apartado aprendí a configurar más profundamente un servidor.`,
+        "Experiencia": "Trabajé en un proyecto de aplicación web donde los administradores pueden asignar tareas a otros usuarios. En el front-end utilizo React.js, el back-end está desarrollado con Node/Express y la base de datos con MySQL. Aquí reforcé mis conocimientos de React y Node, creando: Buscador, usuarios y perfiles, login, tokens, horarios, calendarios, eventos y mucho más. Añadiendo que tuve que crear un servidor Linux y configurarlo todo desde la seguridad, como el apache, en este apartado aprendí a configurar más profundamente un servidor.",
         "Carta": "HojaRecomendacionDIBA.pdf"
     }
 }

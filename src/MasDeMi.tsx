@@ -13,7 +13,7 @@ export default function MasDeMi() {
             {window.innerWidth > 768 ?
                 <div className="displayFlex gap10 spaceEvenly">
                     <Experiencia quina="Técnico informático" tamanyo="w40 " />
-                    <Experiencia quina="Fullstack Diba" tamanyo="w40 " />
+                    <Experiencia quina="DevOps" tamanyo="w40 " />
                 </div> :
                 <CarrucelExperiencias />
             }
@@ -27,14 +27,14 @@ export default function MasDeMi() {
                 <CarrucelConcursos />
             }
             <h1 className="textCenter">Proyectos</h1>
-            <p className="textCenter">
+            <div className="textCenter">
                 {window.innerWidth > 768 ?
                     <div className="displayFlex gap10 spaceEvenly">
                         <Proyecto quina="Hundir la flota" tamanyo="w40" />
                     </div> :
                     <CarrucelProyectos />
                 }
-            </p>
+            </div>
             <a href="https://github.com/AitorRuRo">GitHub</a>
             <a href="https://www.linkedin.com/in/aitor-rubio-rosales-400bb7334/">Linkedin</a>
         </section >
