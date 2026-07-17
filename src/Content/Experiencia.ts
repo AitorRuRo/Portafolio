@@ -5,7 +5,7 @@ export const experiencia: Experiencia = {
         "Tiempo": "(Enero 2022 - Noviembre 2023)",
         "Experiencia": "Aunque éramos solo dos personas, asumí responsabilidades organizativas, siguiendo las necesidades del supervisor y guiando a mi compañero en sus tareas. Esta experiencia me permitió mejorar en la toma de decisiones y el trabajo en equipo.",
     },
-    "DevOps": {
+    "Programador FullStack": {
         "Tiempo": "(Octubre 2025 - 30 Junio 2026)",
         "Experiencia": "Trabajé en un proyecto de aplicación web donde los administradores pueden asignar tareas a otros usuarios. En el front-end utilizo React.js, el back-end está desarrollado con Node/Express y la base de datos con MySQL. Aquí reforcé mis conocimientos de React y Node, creando: Buscador, usuarios y perfiles, login, tokens, horarios, calendarios, eventos y mucho más. Añadiendo que tuve que crear un servidor Linux y configurarlo todo desde la seguridad, como el apache, en este apartado aprendí a configurar más profundamente un servidor.",
         "Carta": "HojaRecomendacionDIBA.pdf"

@@ -13,7 +13,7 @@ export default function MasDeMi() {
             {window.innerWidth > 768 ?
                 <div className="displayFlex gap10 spaceEvenly">
                     <Experiencia quina="Técnico informático" tamanyo="w40 " />
-                    <Experiencia quina="DevOps" tamanyo="w40 " />
+                    <Experiencia quina="Programador FullStack" tamanyo="w40 " />
                 </div> :
                 <CarrucelExperiencias />
             }
